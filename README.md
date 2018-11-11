@@ -21,8 +21,4 @@ Dados estes utilizados para a agricultura, como a aquaponia, e diversas outras �
 
 
 _______________________________________
-Obs:
 
-`src/` deve conter os códigos desenvolvidos
-
-`doc/` documentação do projeto
