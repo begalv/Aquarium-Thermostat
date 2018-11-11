@@ -48,10 +48,10 @@
 
 ## Desenho Fritzing
 
-![Alt](https://github.com/begalv/mackenzie-projeto-TermostatoAquario/blob/master/docs/Hardware/Imagens/fritz.jpg)
+![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/fritzing.jpg)
 
 ## Esquema Eletrônico
 
-![Alt](https://github.com/begalv/mackenzie-projeto-TermostatoAquario/blob/master/docs/Hardware/Imagens/circuito.jpg)
+![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/circ.jpg)
 
 
