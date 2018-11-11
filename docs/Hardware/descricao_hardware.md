@@ -24,25 +24,34 @@
 
 - **Módulo i2c para displays LCD:** 
   O módulo I2C próprio para displays LCDs foi adicionado ao projeto com o intuito de diminuir o uso, normalmente alto, de portas tomadas pelo display. O módulo utiliza o protocolo I2C para a comunicação com o arduino, e consequentemente, com o próprio display LCD. O módulo também possui um potenciômetro para a regulagem de contraste da tela. 
+  
+   ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/i2c.jpg)
 
 - **Botões de entrada:**
   Os botões servem como componentes de "input" no circuito. Através deles os usuários conseguem navegar pelos dois menus existentes no sistema, além de poderem selecionar a temperatura ideal do aquário. Quando o usuário seleciona a temperatura ideal, está indiretamente selecionando, também, as temperaturas de ponto frio, morno e quente. 
 
 - **Ventilador Cooler 12V 0.45A:**
   O ventilador é utilizado para o controle da temperatura, sendo ligado a meia potência (através do PWM do arduino) quando a temperatura está morna e a máxima potência quando quente. Quando acionado, acelera o processo de evaporação da água do aquário, ocasinado na queda da temperatura da água, sendo que sua potência é o suficiente para resfriar a água e não diminuir o nível do aquário. 
+  
+  ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/cooler.jpg)
 
 - **Ponte H L293:**
   O circuito L293 serve como meio para o controle do ventilador através do arduino. O arduino trabalha com voltagens de até 5,5 volts, incapaz de acionar por si só o ventilador de 12 volts. Assim, a ponte-H funciona como um intermediário na comunicação entre o microcontrolador e o ventilador, já que, esta, suporta voltagens mais altas. 
 
 - **Aquecedor para aquários 12V 5A:**
   O aquecedor, assim como o ventilador, é utilizado para o controle da temperatura, sendo acionado quando esta cai abaixo de determinado valor, selecionado inderetamente pelo usuário. O aquecedor utilizado para o circuito possui 12 volts e 60 watts, podendo esquentar 1 litro de água em até 15 minutos.
+  
+  ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/aquecedor.jpg)
 
 - **Módulo Relé:**
   Como o aquecedor possui voltagem e corrente superior as fornecidas pelo arduino, é utilizado um módulo relé como intermediário entre o arduino e o aquecedor. o Relé é ligado em série com o aquecedor e é capaz de receber sinais elétricos do arduino, quando conectado aos 5 volts do microcontrolador. Quando o sinal elétrico com o arduino é cortado pelo código, uma alavanca eletromecância é acionada ecompleta a ligação em série com o aquecedor, o ligando. 
 
-2) Desenho Tinkercad ou Fritzing
+## Desenho Fritzing
 
-3) Esquema eletrônico
+![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/Fritzing%20Aquario.jpg)
 
-4) Materiais para confecção de caixas e consoles (ou arquivos para impressão 3D)
+## Esquema Eletrônico
+
+![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/Circuito%20Aquario.jpg)
+
 
