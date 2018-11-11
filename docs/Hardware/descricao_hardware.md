@@ -13,6 +13,7 @@
   
 - **Termistor DS18B20 (aprova d'áqua):**
   O sensor de temperatura escolhido foi a versão do DS18B20 a prova d'água. O sensor utiliza o protocolo One Wire para se comunicar com o microcontrolador, sendo, portanto, um sensor digital. Os dados coletados servem como "input" para o controle, através de código, do restante dos componentes elétricos e eletrônicos utilizados. 
+  
  ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/sensorTemp.jpg)
   
 - **LED RGB:** 
