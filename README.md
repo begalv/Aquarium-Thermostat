@@ -4,7 +4,7 @@
 ## Projeto: Controlador de temperatura para um aquário
 ## Integrantes do grupo:
 
-- Bernardo Galvão (41827368),
+- Bernardo Galvão (41827368)
 - João Araujo (41817257)
 
 ## Descrição resumida do projeto
