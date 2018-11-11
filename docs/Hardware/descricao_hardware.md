@@ -13,7 +13,7 @@
   
 - **Termistor DS18B20 (aprova d'áqua):**
   O sensor de temperatura escolhido foi a versão do DS18B20 a prova d'água. O sensor utiliza o protocolo One Wire para se comunicar com o microcontrolador, sendo, portanto, um sensor digital. Os dados coletados servem como "input" para o controle, através de código, do restante dos componentes elétricos e eletrônicos utilizados. 
- ![Alt](/Imagens/sensorTemp.jpg)
+ ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/sensorTemp.jpg)
   
 - **LED RGB:** 
   O LED RGB utilizado no projeto funciona como um sinal visual de "output". Quando a temperatura cai abaixo de determinado valor, o LED acende a luz azul, indicando a temperatura fria do áquario; quando a temperatura está no intervalo ideal, acende verde, indicando a temperatura dentro do desejado; quando a temperatura está a cima de determinados valores mais altos, acende amarelo, indicando a temperatura morna, ou acende vermelho, indicando a temperatura quente.
