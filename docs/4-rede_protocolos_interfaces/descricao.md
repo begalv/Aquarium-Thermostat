@@ -1,4 +1,4 @@
-# Protocolos e Interface
+# Protocolos e Interfaces
 
 ## Protocolos/Interfaces de Comunicação
 
