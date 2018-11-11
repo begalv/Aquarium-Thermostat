@@ -49,8 +49,7 @@
 ## Desenho Fritzing
 
 **obs:**
-
-No circuito desenvolvido pelo fritzing, foi utilizado uma bateria de 9V para representar a fonte de 12v, devido a falta de opção no software. Esta fonte de 12V também alimentará o arduino. Com relação ao ventilador e ao aquecedor, foram utilizados partes simbólicas para representá-los. 
+    No circuito desenvolvido pelo fritzing, foi utilizado uma bateria de 9V para representar a fonte de 12v, devido a falta de opção no software. Esta fonte de 12V também alimentará o arduino. Com relação ao ventilador e ao aquecedor, foram utilizados partes simbólicas para representá-los. 
 
 
 ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/fritzing.jpg)
