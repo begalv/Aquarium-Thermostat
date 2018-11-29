@@ -6,7 +6,7 @@
     O microcontrolador PIC foi utilizado para o controle, através dos pinos de entrada e saída, dos componentes utilizados no trabalho. O arduino envia sinais elétricos para o acionamento de diferentes partes do projeto em questão, além de enviar sinais alternados em um curto período de tempo para simular diferentes níveis de voltagem com apenas seus 5 volts característicos do estado "HIGH". Portanto, o microcontrolador PIC permitiu com que os componetnes de hardware utilizados fossem controlados através de códigos de programação, com o controle digital de corrente alta e baixa e o controle analógico, simulado pelas suas saídas PWM (Pulse with Modulation). 
 
 - **Fonte 12V 5A:**
-  Foi utilizado uma fonte de 12 volts e 5 amperes para alimentar o circuito desenvolvido no projeto. Esta escolha é consequência da utilização de dois componentes fora do limite de 5 volts do arduino: o aquecedor de áquarios e o ventilador cooler, além da falta de necessidade de locomoção do hardware, que pode ser alimentado diretamente de uma tomada. Assim, a fonte alimentará o aquecedor de 12 volts e 5 amperes, o ventilador de, também 12 volts, porém 0.45 amperes e, por fim, o arduino, que aguenta voltagens de 7 a 12 volts e alimentará o resto do circuito com 5 volts e amperagem adequada. 
+  Foi utilizado uma fonte de 12 volts e 5 amperes para alimentar o circuito desenvolvido no projeto. Esta escolha é consequência da utilização de dois componentes fora do limite de 5 volts do arduino: o aquecedor de áquarios e o ventilador cooler, além da falta de necessidade de locomoção do hardware, que pode ser alimentado diretamente de uma tomada. Assim, a fonte alimentará o aquecedor de 12 volts e 5 amperes, o ventilador de, também 12 volts, porém 0.45 amperes.
 
 - **Resistores 10KOhms e 300Ohms:** 
   Os resistores utilizados no projeto foram: resistores de 300 ohms, utilizados para que a voltagem enviada pelo arduino não queimasse o LED RGB presente no circuito; resistores de 10Kohms, que exercem o papel de resistores de pull down, garantindo nível lógico estável quando um botão não é pressionado. Os resistores de 10kohms também funcionam como limitadores de corrente, impedindo com que o sensor de temperatura puxe corrente superior aos 0.04 amperes que cada pino do arduino pode oferecer, mantendo a soma do fluxo de corrente enviado por todos os pinos inferior a 0.2 amperes. 
@@ -36,7 +36,7 @@
   ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/cooler.jpg)
 
 - **Ponte H L293:**
-  O circuito L293 serve como meio para o controle do ventilador através do arduino. O arduino trabalha com voltagens de até 5,5 volts, incapaz de acionar por si só o ventilador de 12 volts. Assim, a ponte-H funciona como um intermediário na comunicação entre o microcontrolador e o ventilador, já que, esta, suporta voltagens mais altas. 
+  O circuito L293 serve como meio para o controle do ventilador através do arduino. O arduino trabalha com voltagens de até 5,5 volts, incapaz de acionar por si só o ventilador de 12 volts. Assim, a ponte-H funciona como um intermediário na comunicação entre o microcontrolador e o ventilador, já que, esta, suporta voltagens mais altas. Além de, também, conseguir regular a potência do motor através das saídas PWM. 
 
 - **Aquecedor para aquários 12V 5A:**
   O aquecedor, assim como o ventilador, é utilizado para o controle da temperatura, sendo acionado quando esta cai abaixo de determinado valor, selecionado inderetamente pelo usuário. O aquecedor utilizado para o circuito possui 12 volts e 60 watts, podendo esquentar 1 litro de água em até 15 minutos.
@@ -45,11 +45,14 @@
 
 - **Módulo Relé:**
   Como o aquecedor possui voltagem e corrente superior as fornecidas pelo arduino, é utilizado um módulo relé como intermediário entre o arduino e o aquecedor. o Relé é ligado em série com o aquecedor e é capaz de receber sinais elétricos do arduino, quando conectado aos 5 volts do microcontrolador. Quando o sinal elétrico com o arduino é cortado pelo código, uma alavanca eletromecância é acionada ecompleta a ligação em série com o aquecedor, o ligando. 
+  
+## Escalabilidade do Projeto
+  Tanto a parte lógica quanto física deste projeto foram elaboradas para serem escaláveis de acordo com o tamanho do aquário. A escolha do módulo relé para o acionamento do aquecedor de 12V, ao invés do acionamento através da ponte H, se deve a necessidade de maiores voltagens, suportadas pelo relé, para aquecedores mais potentes utilizados em aquários de maiores proporções. A escolha da ponte H para o acionamento do ventilador de 12V, ao invés do acionamento através módulo relé, se deve a possibilidade de regular a potência do ventilador pela ponte H, através de saídas PWM. Para maiores aquários, mais ventiladores podem ser adicionados ao circuito, sendo possível o controle de dois ventiladores por ponte H. 
 
 ## Desenho Fritzing
 
 **obs:**
-    No circuito desenvolvido pelo fritzing, foi utilizado uma bateria de 9V para representar a fonte de 12v, devido a falta de opção no software. Esta fonte de 12V também alimentará o arduino. Com relação ao ventilador e ao aquecedor, foram utilizados partes simbólicas para representá-los. 
+    No circuito desenvolvido pelo fritzing, foi utilizado uma bateria de 9V para representar a fonte de 12v, devido a falta de opção no software. Com relação ao ventilador e ao aquecedor, foram utilizados partes simbólicas para representá-los. 
 
 ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/fritzing.jpg)
 
