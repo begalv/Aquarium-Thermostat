@@ -1,12 +1,3 @@
-# Circuitos Elétricos e Eletrônicos 2 sem. 2018
-
-## Turma 1G
-## Projeto: Controlador de temperatura para um aquário
-## Integrantes do grupo:
-
-- Bernardo Galvão (41827368)
-- João Araujo (41817257)
-
 ## Descrição resumida do projeto
 
   O projeto consiste na elaboração física e lógica de um controlador de temperatura em um aquário de peixes.
