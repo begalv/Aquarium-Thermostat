@@ -10,6 +10,6 @@ monitora a temperatura e o LED piscará verde; Médio-quente, onde o cooler trab
   O projeto visa ajudar pesquisas científicas que envolvam o controle de temperatura em aquários para a extração de dados sobre peixes.
 Dados estes utilizados para a agricultura, como a aquaponia, e diversas outras áreas do conhecimento. 
 
-
+obs: Este projeto foi desenvolvido por um aluno de primeiro semestre de ciências da computação
 _______________________________________
 
