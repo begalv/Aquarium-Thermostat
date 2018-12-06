@@ -1,4 +1,4 @@
-## Aquarium Thermostat Project
+# Aquarium Thermostat Project
 
 The project consists on the physical and logical elaboration of a temperature controller in a fish tank. It will be possible, through buttons for user input and a LCD display for the output, to choose the ideal temperature of the aquarium, which will be determined by a fan cooler and an aquarium heater, controlled by an arduino.
 
