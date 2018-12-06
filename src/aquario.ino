@@ -57,14 +57,14 @@ void loop() {
   if(menu == 0){
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("Temperatura:");
+    lcd.print("Temperature:");
     lcd.setCursor(0,1); 
     lcd.print(temp);
     
  }else if(menu == 1){
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("mude temp ideal:");
+    lcd.print("change ideal temp:");
     lcd.setCursor(0,1);
     lcd.print("->");
     lcd.print(okTemp);
@@ -79,7 +79,7 @@ void loop() {
         minTemp ++;
         lcd.clear();
         lcd.setCursor(0,0);
-        lcd.print("mude temp ideal:");
+        lcd.print("change ideal temp:");
         lcd.print("-> ");
         lcd.print(okTemp);
         delay(200);
@@ -93,7 +93,7 @@ void loop() {
         minTemp --;
         lcd.clear();
         lcd.setCursor(0,0);
-        lcd.print("mude temp ideal:"); 
+        lcd.print("change ideal temp:"); 
         lcd.print("-> ");
         lcd.print(okTemp);
         delay(200);
