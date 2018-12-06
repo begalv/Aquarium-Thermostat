@@ -46,7 +46,7 @@
 - **Relay Module:**
   Since the heater has higher voltage and current than those provided by Arduino, a relay module is used as an intermediate between the Arduino and the heater. the relay is connected in series with the heater and is capable of receiving electrical signals from the arduino when connected to the 5 volts of the microcontroller. When the electrical signal provided by an arduino output pin is cut off by the code, an electromechanical lever is actuated and the physical connection in series with the heater is completed, turning it on. 
   
-## Project Scalability
+## Project's Scalability
   Both the logical and the physical part of this project were designed to be scalable according to the size of the aquarium. The choice of the relay module for the activation of the 12V heater, rather than the drive via the H bridge, is due to the need for higher voltages, supported by the relay, for more powerful heaters used in larger aquariums. The choice of the H-bridge for the activation of the 12-V fan, instead of the activation via the relay module, is due to the possibility of regulating the power of the fan via the H-bridge via PWM outputs. For larger aquariums, more fans can be added to the circuit, being possible to control two fans per bridge H.
   
 ## Design
