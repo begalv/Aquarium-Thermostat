@@ -1,62 +1,62 @@
-# Descriçao do Hardware
+# Hardware Description
 
-## Lista de Peças:
+## List of Components:
 
 - **Arduino Uno:**
-    O microcontrolador PIC foi utilizado para o controle, através dos pinos de entrada e saída, dos componentes utilizados no trabalho. O arduino envia sinais elétricos para o acionamento de diferentes partes do projeto em questão, além de enviar sinais alternados em um curto período de tempo para simular diferentes níveis de voltagem com apenas seus 5 volts característicos do estado "HIGH". Portanto, o microcontrolador PIC permitiu com que os componetnes de hardware utilizados fossem controlados através de códigos de programação, com o controle digital de corrente alta e baixa e o controle analógico, simulado pelas suas saídas PWM (Pulse with Modulation). 
-
-- **Fonte 12V 5A:**
-  Foi utilizado uma fonte de 12 volts e 5 amperes para alimentar o circuito desenvolvido no projeto. Esta escolha é consequência da utilização de dois componentes fora do limite de 5 volts do arduino: o aquecedor de áquarios e o ventilador cooler, além da falta de necessidade de locomoção do hardware, que pode ser alimentado diretamente de uma tomada. Assim, a fonte alimentará o aquecedor de 12 volts e 5 amperes, o ventilador de, também 12 volts, porém 0.45 amperes.
-
-- **Resistores 10KOhms e 300Ohms:** 
-  Os resistores utilizados no projeto foram: resistores de 300 ohms, utilizados para que a voltagem enviada pelo arduino não queimasse o LED RGB presente no circuito; resistores de 10Kohms, que exercem o papel de resistores de pull down, garantindo nível lógico estável quando um botão não é pressionado. Os resistores de 10kohms também funcionam como limitadores de corrente, impedindo com que o sensor de temperatura puxe corrente superior aos 0.04 amperes que cada pino do arduino pode oferecer, mantendo a soma do fluxo de corrente enviado por todos os pinos inferior a 0.2 amperes. 
+    The PIC microcontroller was used to control, through its input and output pins, the components used in the design. The Arduino sends electrical signals to drive different parts of the project in question, as well as sending alternating signals in a short period of time to simulate different voltage levels with only its 5 volts characteristic of the "HIGH" state. Therefore, the PIC microcontroller allows the hardware components used to be controlled through code.
+    
+- **12V 5A Power Supply:**
+  A source of 12 volts and 5 amps was used to power part of the developed circuit. This choice is a consequence of the use of two components outside the 5-volt limit of arduino: the aquarium heater and the fan cooler. In addition, there's a lack of need to move the hardware around, so it can be fed directly from a power outlet. Thus, the power supply will power the 12-volt and 5-ampere heater and the 12-volt, but 0.45-ampere fan.
   
-- **Termistor DS18B20 (aprova d'áqua):**
-  O sensor de temperatura escolhido foi a versão do DS18B20 a prova d'água. O sensor utiliza o protocolo One Wire para se comunicar com o microcontrolador, sendo, portanto, um sensor digital. Os dados coletados servem como "input" para o controle, através de código, do restante dos componentes elétricos e eletrônicos utilizados. 
+- **10KOhms and 300Ohms Resistors:** 
+  The resistors used in the design were: 300 ohms resistors, used so that the voltage sent by the arduino did not burn the RGB LED present in the circuit; 10Kohms resistors, which play the role of pull down resistors, ensuring stable logical level when a button is not pressed. 10kohms resistors also function as current limiters, preventing the temperature sensor from pulling current higher than the 0.04 amperes that each arduino pin can provide, keeping the sum of the current flow sent by all pins less than 0.2 amperes.
+  
+- **DS18B20 Waterproof Temperature Sensor:**
+ The temperature sensor chosen was the waterproof version of the DS18B20. The sensor uses the One Wire protocol to communicate with the microcontroller and, therefore, is a digital sensor. The collected data serve as input for the control, by code, of the rest of the electrical and electronic components used.
   
  ![Alt](https://github.com/begalv/mackenzie-projeto-TermostatoAquario/blob/master/docs/Hardware/Imagens/sensor.jpg)
   
 - **LED RGB:** 
-  O LED RGB utilizado no projeto funciona como um sinal visual de "output". Quando a temperatura cai abaixo de determinado valor, o LED acende a luz azul, indicando a temperatura fria do áquario; quando a temperatura está no intervalo ideal, acende verde, indicando a temperatura dentro do desejado; quando a temperatura está a cima de determinados valores mais altos, acende amarelo, indicando a temperatura morna, ou acende vermelho, indicando a temperatura quente.
+  The RGB LED used in the design works as a visual "output" signal. When the temperature falls below a certain value, the LED turns on the blue light, indicating the cold temperature of the aquarium; when the temperature is within the ideal range, turns on the green light, indicating the temperature within the desired range; when the temperature is above certain higher values, it turns yellow, indicating the warm temperature, or red, indicating the hotter temperatures.
+  
+- **LCD Display (16x2):**
+ The LCD display is used as an "output" to inform the user of relevant data. The system shown on the screen has two different states (menus): one to show the current temperature of the aquarium in Celsius, provided by the sensor, and another to inform the ideal temperature for the aquarium selected by the user, which can be changed in the same menu.
 
-- **Display LCD (16x2):**
-  O display LCD é utilizado como "output" para informar ao usuário dados relevantes. O sistema possui dois estados (menus) diferentes: um para mostrar a temperatura atual do aquário em Celsius, fornecida pelo sensor, e outro para informar a temperatura ideal para o aquário selecionada pelo usuário, sendo que esta pode ser alterada neste mesmo menu. 
-
-- **Módulo i2c para displays LCD:** 
-  O módulo I2C próprio para displays LCDs foi adicionado ao projeto com o intuito de diminuir o uso, normalmente alto, de portas tomadas pelo display. O módulo utiliza o protocolo I2C para a comunicação com o arduino, e consequentemente, com o próprio display LCD. O módulo também possui um potenciômetro para a regulagem de contraste da tela. 
+- **i2c Module for LCD Displays:** 
+  The I2C module, made for LCD displays, has been added to the project in order to reduce the use, usually high, of ports taken by the display. The module uses the I2C protocol for communication with the Arduino, and consequently, with the LCD display itself. The module also has a potentiometer for adjusting the screen contrast.
   
    ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/i2c.jpg)
 
-- **Botões de entrada:**
-  Os botões servem como componentes de "input" no circuito. Através deles os usuários conseguem navegar pelos dois menus existentes no sistema, além de poderem selecionar a temperatura ideal do aquário. Quando o usuário seleciona a temperatura ideal, está indiretamente selecionando, também, as temperaturas de ponto frio, morno e quente. 
+- **input Buttons:**
+  The buttons serve as input components in the circuit. Through them users can navigate through the two menus in the system, and they can select the ideal temperature of the aquarium. When the user selects the ideal temperature, he is indirectly selecting also the temperatures of cold, warm and hot.
 
-- **Ventilador Cooler 12V 0.45A:**
-  O ventilador é utilizado para o controle da temperatura, sendo ligado a meia potência (através do PWM do arduino) quando a temperatura está morna e a máxima potência quando quente. Quando acionado, acelera o processo de evaporação da água do aquário, ocasinado na queda da temperatura da água, sendo que sua potência é o suficiente para resfriar a água e não diminuir o nível do aquário. 
+- **12V 0.45A Fan Cooler:**
+  The fan is used for temperature control and it is turned on at half-power (via Arduino's PWM) when the temperature is warm, and, at the maximum power when very hot. When activated, it accelerates the process of water evaporation in the aquarium, cooling its temperature, being that its power is enough to cool the water and not to diminish the level of the aquarium.
   
   ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/cooler.jpg)
 
-- **Ponte H L293:**
-  O circuito L293 serve como meio para o controle do ventilador através do arduino. O arduino trabalha com voltagens de até 5,5 volts, incapaz de acionar por si só o ventilador de 12 volts. Assim, a ponte-H funciona como um intermediário na comunicação entre o microcontrolador e o ventilador, já que, esta, suporta voltagens mais altas. Além de, também, conseguir regular a potência do motor através das saídas PWM. 
+- **L293 H Bridge:**
+  The L293 chip is used for the fan control through arduino. The arduino works with voltages of up to 5.5 volts, unable to drive alone the 12-volt fan. Thus, the H-bridge acts as an intermediate in the communication between the microcontroller and the fan, since it supports higher voltages. In addition, you can adjust the motor power through the PWM outputs.
 
-- **Aquecedor para aquários 12V 5A:**
-  O aquecedor, assim como o ventilador, é utilizado para o controle da temperatura, sendo acionado quando esta cai abaixo de determinado valor, selecionado inderetamente pelo usuário. O aquecedor utilizado para o circuito possui 12 volts e 60 watts, podendo esquentar 1 litro de água em até 15 minutos.
+- **12V 5A Water Heater:**
+  The heater, like the fan, is used to control the temperature, being triggered when it falls below a certain value, selected by the user. The heater used for the circuit has 12 volts and 60 watts, and can heat 1 liter of water in up to 15 minutes.
   
   ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/aquecedor.jpg)
 
-- **Módulo Relé:**
-  Como o aquecedor possui voltagem e corrente superior as fornecidas pelo arduino, é utilizado um módulo relé como intermediário entre o arduino e o aquecedor. o Relé é ligado em série com o aquecedor e é capaz de receber sinais elétricos do arduino, quando conectado aos 5 volts do microcontrolador. Quando o sinal elétrico com o arduino é cortado pelo código, uma alavanca eletromecância é acionada ecompleta a ligação em série com o aquecedor, o ligando. 
+- **Relay Module:**
+  Since the heater has higher voltage and current than those provided by Arduino, a relay module is used as an intermediate between the Arduino and the heater. the relay is connected in series with the heater and is capable of receiving electrical signals from the arduino when connected to the 5 volts of the microcontroller. When the electrical signal provided by an arduino output pin is cut off by the code, an electromechanical lever is actuated and the physical connection in series with the heater is completed, turning it on. 
   
-## Escalabilidade do Projeto
-  Tanto a parte lógica quanto física deste projeto foram elaboradas para serem escaláveis de acordo com o tamanho do aquário. A escolha do módulo relé para o acionamento do aquecedor de 12V, ao invés do acionamento através da ponte H, se deve a necessidade de maiores voltagens, suportadas pelo relé, para aquecedores mais potentes utilizados em aquários de maiores proporções. A escolha da ponte H para o acionamento do ventilador de 12V, ao invés do acionamento através módulo relé, se deve a possibilidade de regular a potência do ventilador pela ponte H, através de saídas PWM. Para maiores aquários, mais ventiladores podem ser adicionados ao circuito, sendo possível o controle de dois ventiladores por ponte H. 
-
-## Desenho Fritzing
+## Project Scalability
+  Both the logical and the physical part of this project were designed to be scalable according to the size of the aquarium. The choice of the relay module for the activation of the 12V heater, rather than the drive via the H bridge, is due to the need for higher voltages, supported by the relay, for more powerful heaters used in larger aquariums. The choice of the H-bridge for the activation of the 12-V fan, instead of the activation via the relay module, is due to the possibility of regulating the power of the fan via the H-bridge via PWM outputs. For larger aquariums, more fans can be added to the circuit, being possible to control two fans per bridge H.
+  
+## Design
 
 **obs:**
-    No circuito desenvolvido pelo fritzing, foi utilizado uma bateria de 9V para representar a fonte de 12v, devido a falta de opção no software. Com relação ao ventilador e ao aquecedor, foram utilizados partes simbólicas para representá-los. 
-
+   In the circuit developed by fritzing, a 9V battery was used to represent the 12v source, due to lack of option in the software. Regarding the fan and heater, symbolic parts were used to represent them.
+   
 ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/fritzing.jpg)
 
-## Esquema Eletrônico
+## Electronic Schematics
 
 ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/circ.jpg)
 
