@@ -22,12 +22,12 @@
 - **LCD Display (16x2):**
  The LCD display is used as an "output" to inform the user of relevant data. The system shown on the screen has two different states (menus): one to show the current temperature of the aquarium in Celsius, provided by the sensor, and another to inform the ideal temperature for the aquarium selected by the user, which can be changed in the same menu.
 
-- **i2c Module for LCD Displays:** 
+- **I2C Module for LCD Displays:** 
   The I2C module, made for LCD displays, has been added to the project in order to reduce the use, usually high, of ports taken by the display. The module uses the I2C protocol for communication with the Arduino, and consequently, with the LCD display itself. The module also has a potentiometer for adjusting the screen contrast.
   
    ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/i2c.jpg)
 
-- **input Buttons:**
+- **Input Buttons:**
   The buttons serve as input components in the circuit. Through them users can navigate through the two menus in the system, and they can select the ideal temperature of the aquarium. When the user selects the ideal temperature, he is indirectly selecting also the temperatures of cold, warm and hot.
 
 - **12V 0.45A Fan Cooler:**
