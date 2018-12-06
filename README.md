@@ -10,7 +10,7 @@ monitora a temperatura e o LED piscará verde; Médio-quente, onde o cooler trab
   O projeto visa ajudar pesquisas científicas que envolvam o controle de temperatura em aquários para a extração de dados sobre peixes.
 Dados estes utilizados para a agricultura, como a aquaponia, e diversas outras áreas do conhecimento. 
 
-**obs: Este projeto foi desenvolvido por um aluno de primeiro semestre de ciências da computação
+**obs: Este projeto foi desenvolvido por um aluno de primeiro semestre de ciências da computação**
 _______________________________________
 
 The project consists of the physical and logical elaboration of a temperature controller in a fish tank. It will be possible, through buttons for user input and a LCD display for the output, to choose the ideal temperature of the aquarium, which will be determined by a fan cooler and an aquarium heater, controlled by an arduino.
@@ -19,4 +19,4 @@ There will be three temperature states for the aquarium: Cold, in which the heat
 
 The project aims to assist scientific research involving the control of temperature in aquariums for the extraction of fish data. These data are used for agriculture, such as aquaponics, and several other areas of knowledge.
 
-**obs: This project was developed by a first-semester student of computer science
+**obs: This project was developed by a first-semester student of computer science**
