@@ -17,7 +17,7 @@ const int buttonPin1 = 3;
 const int buttonPin2 = 4;
 const int motorPin1 = 9;
 const int motorPin2 = 6;
-const int relePin = 7;
+const int relePin = 10;
 
 float temp = 0; 
 int maxTemp = 30;
