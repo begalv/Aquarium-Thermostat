@@ -14,7 +14,7 @@
 - **DS18B20 Waterproof Temperature Sensor:**
  The temperature sensor chosen was the waterproof version of the DS18B20. The sensor uses the One Wire protocol to communicate with the microcontroller and, therefore, is a digital sensor. The collected data serve as input for the control, by code, of the rest of the electrical and electronic components used.
   
- ![Alt](https://github.com/begalv/mackenzie-projeto-TermostatoAquario/blob/master/docs/Hardware/Imagens/sensor.jpg)
+ ![Alt](https://github.com/begalv/mackenzie-projeto-TermostatoAquario/blob/master/docs/Hardware/images/sensor.jpg)
   
 - **LED RGB:** 
   The RGB LED used in the design works as a visual "output" signal. When the temperature falls below a certain value, the LED turns on the blue light, indicating the cold temperature of the aquarium; when the temperature is within the ideal range, turns on the green light, indicating the temperature within the desired range; when the temperature is above certain higher values, it turns yellow, indicating the warm temperature, or red, indicating the hotter temperatures.
@@ -25,7 +25,7 @@
 - **I2C Module for LCD Displays:** 
   The I2C module, made for LCD displays, has been added to the project in order to reduce the use, usually high, of ports taken by the display. The module uses the I2C protocol for communication with the Arduino, and consequently, with the LCD display itself. The module also has a potentiometer for adjusting the screen contrast.
   
-   ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/i2c.jpg)
+   ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/images/i2c.jpg)
 
 - **Input Buttons:**
   The buttons serve as input components in the circuit. Through them users can navigate through the two menus in the system, and they can select the ideal temperature of the aquarium. When the user selects the ideal temperature, he is indirectly selecting also the temperatures of cold, warm and hot.
@@ -33,7 +33,7 @@
 - **12V 0.45A Fan Cooler:**
   The fan is used for temperature control and it is turned on at half-power (via Arduino's PWM) when the temperature is warm, and, at the maximum power when very hot. When activated, it accelerates the process of water evaporation in the aquarium, cooling its temperature, being that its power is enough to cool the water and not to diminish the level of the aquarium.
   
-  ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/cooler.jpg)
+  ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/images/cooler.jpg)
 
 - **L293 H Bridge:**
   The L293 chip is used for the fan control through arduino. The arduino works with voltages of up to 5.5 volts, unable to drive alone the 12-volt fan. Thus, the H-bridge acts as an intermediate in the communication between the microcontroller and the fan, since it supports higher voltages. In addition, you can adjust the motor power through the PWM outputs.
@@ -41,7 +41,7 @@
 - **12V 5A Water Heater:**
   The heater, like the fan, is used to control the temperature, being triggered when it falls below a certain value, selected by the user. The heater used for the circuit has 12 volts and 60 watts, and can heat 1 liter of water in up to 15 minutes.
   
-  ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/aquecedor.jpg)
+  ![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/images/aquecedor.jpg)
 
 - **Relay Module:**
   Since the heater has higher voltage and current than those provided by Arduino, a relay module is used as an intermediate between the Arduino and the heater. the relay is connected in series with the heater and is capable of receiving electrical signals from the arduino when connected to the 5 volts of the microcontroller. When the electrical signal provided by an arduino output pin is cut off by the code, an electromechanical lever is actuated and the physical connection in series with the heater is completed, turning it on. 
@@ -54,10 +54,10 @@
 **obs:**
    In the circuit developed by fritzing, a 9V battery was used to represent the 12v source, due to lack of option in the software. Regarding the fan and heater, symbolic parts were used to represent them.
    
-![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/fritzing.jpg)
+![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/images/fritzing.jpg)
 
 ## Electronic Schematics
 
-![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/Imagens/circ.jpg)
+![Alt](https://github.com/begalv/mackenzie-projeto-PCCooler/blob/master/docs/Hardware/images/circ.jpg)
 
 
