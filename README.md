@@ -9,5 +9,5 @@ The project aims to assist scientific research involving the control of temperat
 **obs: This project was developed by a first-semester student of computer science**
 _______________________________________
 
-![Alt](https://github.com/begalv/Aquarium-Thermostat/blob/master/docs/Hardware/images/DSC_0021.JPG) 
+![Alt](https://github.com/begalv/Aquarium-Thermostat/blob/master/docs/Hardware/images/DSC_0021.JPG) <br/>
 ![Alt](https://github.com/begalv/Aquarium-Thermostat/blob/master/docs/Hardware/images/DSC_0049.JPG)
