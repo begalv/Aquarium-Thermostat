@@ -113,7 +113,8 @@ void loop() {
     digitalWrite(bluePin, HIGH);
     digitalWrite(greenPin, LOW); 
     analogWrite(motorPin1, 0);
-    digitalWrite(relePin, LOW);
+    analogWrite(motorPin2, 0);
+    digitalWrite(relePin, HIGH);
   }else if(temp>=minTemp && temp<=okTemp){
     delay(200);
     digitalWrite(redPin, LOW);
@@ -125,7 +126,7 @@ void loop() {
     digitalWrite(greenPin, HIGH);
     analogWrite(motorPin1, 0);
     analogWrite(motorPin2, 0);
-    digitalWrite(relePin, HIGH);
+    digitalWrite(relePin, LOW);
   }else if(temp>maxTemp){
     delay(200);
     digitalWrite(redPin, LOW);
@@ -137,7 +138,7 @@ void loop() {
     digitalWrite(greenPin, LOW);
     analogWrite(motorPin1, 150);
     analogWrite(motorPin2, 150);
-    digitalWrite(relePin, HIGH);
+    digitalWrite(relePin, LOW);
   }else{
     delay(200);
     digitalWrite(redPin, LOW);
@@ -149,7 +150,7 @@ void loop() {
     digitalWrite(greenPin, HIGH);
     analogWrite(motorPin1, 75);
     analogWrite(motorPin2, 75);
-    digitalWrite(relePin, HIGH);  
+    digitalWrite(relePin, LOW);  
   }
   delay(500);
 }
