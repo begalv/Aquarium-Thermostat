@@ -6,6 +6,8 @@ There will be three temperature states for the aquarium: Cold, in which the heat
 
 The project aims to assist scientific research involving the control of temperature in aquariums for the extraction of fish data. These data are used for agriculture, such as aquaponics, and several other areas of knowledge.
 
+project's video: https://www.youtube.com/watch?v=hnH99Ou-5S4&
+
 **obs: This project was developed by a first-semester student of computer science**
 _______________________________________
 
