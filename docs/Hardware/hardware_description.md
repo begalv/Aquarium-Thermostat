@@ -3,7 +3,7 @@
 ## List of Components:
 
 - **Arduino Uno:**
-    The PIC microcontroller was used to control, through its input and output pins, the components used in the design. The Arduino sends electrical signals to drive different project's parts, as well as sending alternating signals in a short period of time to simulate different voltage levels with only its 5 volts characteristic of the "HIGH" state. Therefore, the PIC microcontroller allows the hardware components used to be controlled through code.
+    The PIC microcontroller was used to control, through its input and output pins, the components used in the design. The Arduino sends electrical signals to drive different project's parts, as well as sending alternating signals in a short period of time to simulate different voltage levels with only its 5 volts characteristic of the "HIGH" state. Therefore, the PIC microcontroller allows the used hardware components to be controlled through code.
     
 - **12V 5A Power Supply:**
   A source of 12 volts and 5 amps was used to power part of the developed circuit. This choice is a consequence of the use of two components outside the 5-volt limit of arduino: the aquarium heater and the fan cooler. In addition, there's a lack of need to move the hardware around, so it can be fed directly from a power outlet. Thus, the power supply will power the 12-volt and 5-ampere heater and the 12-volt, but 0.45-ampere fan.
