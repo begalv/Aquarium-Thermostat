@@ -1,6 +1,6 @@
 # Aquarium Thermostat Project
 
-The project consists on the physical and logical elaboration of a fish tank temperature controller. It is possible, through buttons for user input and a LCD display for the output, to choose the aquarium's ideal temperature, which will be determined by a fan cooler and an aquarium heater, controlled by an arduino.
+The project consists on the physical and logical elaboration of a fish tank temperature controller. It is possible, through buttons for user input and a LCD display for output, to choose the aquarium's ideal temperature, which will be determined by a fan cooler and an aquarium heater, controlled by an arduino.
 
 There are three temperature states for the aquarium: Cold, in which the heater turns on and the LED blinks blue; Ideal, in which the arduino only monitors the temperature and the LED blinks green; Medium-hot, in which the cooler works at half power and the LED blinks yellow; and Hot in which the cooler works at its maximum power and the LED blinks red.
 
